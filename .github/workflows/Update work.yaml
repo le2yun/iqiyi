@@ -19,9 +19,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - name: Run iqiyi
+      - name: Run iQIYI
         run: npm install
-      - run: node iqiyi.js
+      - run: node iQIYI.js
         env:
           iQIYI_COOKIE: ${{ secrets.iQIYI_COOKIE }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
