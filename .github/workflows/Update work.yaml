@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: '59 2 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch: {}  # 允许手动触发
 
 jobs:
