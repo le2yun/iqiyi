@@ -25,7 +25,7 @@ JsBox, Node.js用户获取Cookie说明：
 方法二PC：网页登录 https://www.iqiyi.com 按F12控制台执行 console.log(document.cookie) 复制打印的Cookie填入以下脚本变量或环境变量中即可
 */
 
-var cookie = ''; //单引号内填入手动获取的Cookie
+var cookie = 'QC005=c9d46b3190bb36567eaba3645a3df591; QC007=DIRECT; QP0037=0; __dfp=a03ec849408c3f499b88c96604f319e85d0e54eafe60642d1082aaa6c40b63ee6d@1741051853268@1739755854268; QC234=b9ad0df52db9fb9b9dd8b6028d826a78; QC006=1c2b544476ddf6c498e296bf40bfc7e5; P00004=.1739755932.f3e3404701; P00001=cbfTm1o3nJSskscWBZQm1lqpdlcpx66KJtUMnoIH2fe0IQjTD9KYHm3LpQgm3kxn4h8cJZ71; P00003=1208690461; P00010=1208690461; P01010=1739808000; P00007=cbfTm1o3nJSskscWBZQm1lqpdlcpx66KJtUMnoIH2fe0IQjTD9KYHm3LpQgm3kxn4h8cJZ71; P00PRU=1208690461; P00002=%7B%22uid%22%3A%221208690461%22%2C%22pru%22%3A1208690461%2C%22user_name%22%3A%22139****1863%22%2C%22nickname%22%3A%22Pandorad%22%2C%22pnickname%22%3A%22Pandorad%22%2C%22type%22%3A11%2C%22email%22%3Anull%7D; QC170=1; vipTypes=1; vipLevel=6; T00404=3181fcb3475e34faa904b9dd603b33b5; IMS=IggQABj_uc29BiomCiBmOGViZmNiYWVhMTQ0MDZlOWQxNjYzY2EyODkzZmRmZBAAIgByJAogZjhlYmZjYmFlYTE0NDA2ZTlkMTY2M2NhMjg5M2ZkZmQQAIIBBCICEAGKASQKIgogZjhlYmZjYmFlYTE0NDA2ZTlkMTY2M2NhMjg5M2ZkZmQ; curDeviceState=width%3D770%3BconduitId%3D%3Bscale%3D125%3Bbrightness%3Ddark%3BisLowPerformPC%3D0%3Bos%3Dbrowser%3Bosv%3D10.0.19044; QP007=139140'; //单引号内填入手动获取的Cookie
 
 var barkKey = ''; //Bark APP 通知推送Key
 
