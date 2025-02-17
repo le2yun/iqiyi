@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-  watch:
-    types: started
   schedule:
     - cron: '5 16 * * *'
+  workflow_dispatch: {}  # 允许手动触发
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,12 +16,13 @@ jobs:
       - name: Checkout codes
         uses: actions/checkout@v2
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '12.x'
-      - name: Run iQIYI
+          node-version: '16.x'
+      - name: Install dependencies
         run: npm install
-      - run: node iQIYI.js
+      - name: Run iQIYI script
+        run: node iQIYI.js
         env:
           iQIYI_COOKIE: ${{ secrets.iQIYI_COOKIE }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
